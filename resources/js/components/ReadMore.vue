@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p @click="toggle" v-bind:class="{ 'pt-3 pb-3': showAll}">
+        <p @click.stop="toggle" v-bind:class="{ 'pt-3 pb-3': showAll}">
             {{ message }}
             <span
                     v-if="!showAll"
